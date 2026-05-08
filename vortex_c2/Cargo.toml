@@ -1,0 +1,19 @@
+[package]
+name = "vortex_c2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.7", features = ["ws"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ratatui = "0.26"
+crossterm = { version = "0.27", features = ["events"] }
+futures = "0.3"
+uuid = { version = "1.0", features = ["v4"] } # Добавляем uuid
+futures-util = "0.3" # Добавляем futures-util для socket.split()
+tower-http = { version = "0.5", features = ["fs"] } # Добавляем tower-http для отдачи статических файлов
+aes-gcm = "0.10"
+rand_core = { version = "0.6", features = ["getrandom"] }
+

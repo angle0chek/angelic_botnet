@@ -1,0 +1,17 @@
+[package]
+name = "nexus_propagator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.21"
+aes-gcm = "0.10"
+rand_core = { version = "0.6", features = ["getrandom"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.5"
+futures-util = "0.3"
+redis = { version = "1.2.1", features = ["tokio-comp"] }
+sysinfo = "0.29" # Добавляем sysinfo
+uuid = { version = "1.0", features = ["v4"] } # Добавляем uuid
